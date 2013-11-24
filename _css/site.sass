@@ -1,0 +1,107 @@
+$width: 980px
+$sideWidth: 300px
+
+// general
+
+body
+	:margin 0
+	:padding 0
+
+
+.container
+	:width 980px
+	:margin 0 auto
+
+.mainContent
+	:padding-top 30px
+
+.mainContent2
+	:padding 50px 0
+
+
+.maintitle
+	:color $color_title
+.meta
+	:padding 30px 0
+	:margin 0
+	:font-family Arial, sans
+	:color $color_subtitle
+	:font-weight bold
+
+a .soh
+	:display none
+a:hover .soh
+	:display inline-block
+
+a
+	:color $color_base
+	&:hover
+		:color $color_link
+
+
+// presentation
+
+#me
+	:position fixed
+	:width $sideWidth
+	:left 50%
+	:margin 0 0 0 (($width / 2) - $sideWidth)
+	:z-index 1
+	:height 100%
+
+	h1
+		:color $color_title
+		:font-size 2.4em
+	h3
+		:font-size 1.4em
+		:border-top 1px solid $color_title
+		:color $color_subtitle
+
+	div
+		:margin-top 30px
+		:text-align center
+
+	nav
+		:margin-top 30px
+		:text-align right
+		:width 100%
+		a
+			:color $color_base
+			:display block
+			:margin 0 0 0 20px
+			:padding 5px
+			:border-bottom 1px solid $color_base
+			:text-decoration none
+			.soh
+				:margin-right -15px
+				:padding-left 5px
+
+			&:last-child
+				:border-bottom 0px
+			&:hover
+				:color $color_link
+
+#posts
+	:width ($width - $sideWidth)
+	:padding-right $sideWidth
+	:margin 0 auto
+	:padding-top 30px
+
+.postlink
+	:display block
+	a
+		:display block
+		:padding 20px
+		:text-decoration none
+		:color $color_link
+		:font-weight bold
+		:font-size 1.5em
+		.date
+			:font-weight normal
+			:font-family "Courier New", Courier, monospace
+			:display inline-block
+			:padding-right 10px
+			:font-size 0.7em
+		&:hover
+			:background $color_title
+			:color #fff

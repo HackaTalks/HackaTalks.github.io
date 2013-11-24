@@ -1,0 +1,22 @@
+# standard jekyll configuration options
+
+exclude: ['Rakefile', 'README.md', 'config.rb']
+
+# configuration required for some pages
+
+domain: http://localhost:4000
+title: HackaTalks
+
+# configuration for ehancements, uncomment to enable
+
+# feedburner:
+#   id: feedburnerid
+
+# google_analytics:
+#   account: UA-XXXXX-X
+
+github:
+  username: HackaTalks
+
+# disqus:
+#   id: disqusid
