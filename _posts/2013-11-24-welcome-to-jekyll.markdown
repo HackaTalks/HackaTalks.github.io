@@ -6,6 +6,3 @@ categories: welcome
 ---
 
 This is really just a test post. Should be deleted soon.
-
-
-Do NOT post *shoes*
